@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.clip-right{
+  clip-path: polygon(0% 0, 40% 0%,90% 100%, 0% 100%);
+}
+.clip-left {
+  clip-path: polygon(60% 0, 100% 0%, 100% 100%, 10% 100%);
+}
+
