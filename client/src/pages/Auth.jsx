@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { User, Lock, Mail,Eye ,EyeOff } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import Google from "../components/Google";
 
 
 export default function Auth() {
@@ -139,18 +140,7 @@ const handleLogin = async(e) => {
                   hover:scale-105 transition mb-4">
                   Login
                 </button>
-
-                {/* Google Login */}
-                <button className="flex items-center justify-center gap-2 
-                  bg-white text-black py-2 rounded-full font-medium 
-                  hover:bg-gray-200 transition">
-                  <img
-                    src="https://www.svgrepo.com/show/475656/google-color.svg"
-                    alt="google"
-                    className="w-5 h-5"
-                  />
-                  Continue with Google
-                </button>
+              <Google />
 
                 <p className="mt-6 text-sm text-gray-400">
                   Dont have an account?{" "}
@@ -234,17 +224,7 @@ const handleLogin = async(e) => {
                   {loading ? "loading..." : "Register"}
                 </button>
 
-                {/* Google Signup */}
-                <button className="flex items-center justify-center gap-2 
-                  bg-white text-black py-2 rounded-full font-medium 
-                  hover:bg-gray-200 transition">
-                  <img
-                    src="https://www.svgrepo.com/show/475656/google-color.svg"
-                    alt="google"
-                    className="w-5 h-5"
-                  />
-                  Sign up with Google
-                </button>
+              <Google />
 
                 <p className="mt-6 text-sm text-gray-400">
                   Already have an account?{" "}
